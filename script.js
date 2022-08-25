@@ -1,3 +1,4 @@
+//Function to push data
 function saveData(event) {
     event.preventDefault();
     const message = document.getElementById("displayError");
@@ -20,7 +21,7 @@ function saveData(event) {
       message.innerHTML = "Error: " + err + ".";
     }
   }
-
+    //onload
   window.addEventListener("DOMContentLoaded", () => {
     const localStorageObj = localStorage;
     const localstoragekeys = Object.keys(localStorageObj);
